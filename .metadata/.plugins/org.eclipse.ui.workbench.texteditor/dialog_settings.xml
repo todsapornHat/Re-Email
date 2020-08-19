@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="nextLine"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="test333@gmail.com"/>
+			<item value="nextLine"/>
+			<item value=" &lt;JOB JOBISN=&quot;15&quot; APPLICATION=&quot;DATACONSO&quot; SUB_APPLICATION=&quot;Webserve-2&quot; JOBNAME=&quot;004-CONSOL_APP_Staging_Snap&quot; DESCRIPTION=&quot;Console Staging Snap. Owner by duangrawee&quot; CREATED_BY=&quot;emuser&quot; RUN_AS=&quot;consoopr&quot; CRITICAL=&quot;0&quot; TASKTYPE=&quot;Command&quot; CYCLIC=&quot;0&quot; NODEID=&quot;Webserve-2.scnyl.local&quot; INTERVAL=&quot;00000M&quot; CMDLINE=&quot;D: &amp;amp;&amp;amp; cd D:\Consolidate_System\RunJob &amp;amp;&amp;amp; APP_STAGING_SNAP_Run_Consol.bat&quot; CONFIRM=&quot;0&quot; RETRO=&quot;0&quot; MAXWAIT=&quot;0&quot; MAXRERUN=&quot;0&quot; AUTOARCH=&quot;1&quot; MAXDAYS=&quot;0&quot; MAXRUNS=&quot;0&quot; TIMEFROM=&quot;1030&quot; TIMETO=&quot;1040&quot; JAN=&quot;1&quot; FEB=&quot;1&quot; MAR=&quot;1&quot; APR=&quot;1&quot; MAY=&quot;1&quot; JUN=&quot;1&quot; JUL=&quot;1&quot; AUG=&quot;1&quot; SEP=&quot;1&quot; OCT=&quot;1&quot; NOV=&quot;1&quot; DEC=&quot;1&quot; DAYS_AND_OR=&quot;O&quot; SHIFT=&quot;Ignore Job&quot; SHIFTNUM=&quot;+00&quot; SYSDB=&quot;1&quot; IND_CYCLIC=&quot;S&quot; CREATION_USER=&quot;chirawut&quot; CREATION_DATE=&quot;20140912&quot; CREATION_TIME=&quot;173822&quot; CHANGE_USERID=&quot;emuser&quot; CHANGE_DATE=&quot;20170114&quot; CHANGE_TIME=&quot;080220&quot; RULE_BASED_CALENDAR_RELATIONSHIP=&quot;O&quot; APPL_TYPE=&quot;OS&quot; MULTY_AGENT=&quot;N&quot; USE_INSTREAM_JCL=&quot;N&quot; VERSION_OPCODE=&quot;N&quot; IS_CURRENT_VERSION=&quot;Y&quot; VERSION_SERIAL=&quot;3&quot; VERSION_HOST=&quot;COM2702&quot; CYCLIC_TOLERANCE=&quot;0&quot; CYCLIC_TYPE=&quot;C&quot; PARENT_FOLDER=&quot;004-DATACONSO&quot; /&gt;"/>
+			<item value="@SCBLIFE.CO.TH"/>
+			<item value="@scb"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1624"/>
+		<item key="DIALOG_Y_ORIGIN" value="260"/>
+		<item key="DIALOG_WIDTH" value="267"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

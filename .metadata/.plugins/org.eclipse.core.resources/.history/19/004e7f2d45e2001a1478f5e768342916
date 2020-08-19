@@ -1,0 +1,87 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Scanner;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ReEmail {
+
+	public static void main(String[] args) throws IOException {
+
+//		ReadExcel
+		File fileExcel = new File("E:\\ADI_2\\replaceEmail\\ReplaceEmail\\src\\text1.xlsx"); // creating a new file
+//		Text file
+		File file = new File("src/CompleteWorkspace.text");
+		Scanner scan = new Scanner(file);
+		String fileContent = "";
+		
+		// instance
+		FileInputStream fis = new FileInputStream(fileExcel); // obtaining bytes from the file
+// creating Workbook instance that refers to .xlsx file
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		XSSFSheet sheet = wb.getSheetAt(0); // creating a Sheet object to retrieve object
+		Iterator<Row> itr = sheet.iterator(); // iterating over excel file
+		while (itr.hasNext()) {
+			Row row = itr.next();
+			Iterator<Cell> cellIterator = row.cellIterator(); // iterating over each column
+			while (cellIterator.hasNext()) {
+				String textSearch = "";
+				String newEmail = "";
+				
+				Cell cell = cellIterator.next();
+				switch (cell.getCellType()) {
+				case Cell.CELL_TYPE_STRING: // field that represents string cell type
+					if(cell.getColumnIndex() == 0) {
+						textSearch = cell.getStringCellValue();
+					}else if(cell.getColumnIndex() == 1) {
+						newEmail = cell.getStringCellValue();
+					}
+					
+					System.out.print(cell.getRowIndex()+cell.getColumnIndex()+">>textSearch :>>"+textSearch + "\t\t\t newEmail :"+newEmail);
+//					
+					break;
+				case Cell.CELL_TYPE_NUMERIC: // field that represents number cell type
+					System.out.print("---"+cell.getNumericCellValue() + "\t\t\t");
+//					
+					break;
+				default:
+				}
+			}
+			System.out.println("");
+		}
+
+//		Find Text in Excel
+		
+		
+		
+		int count = 0;
+
+//		while (scan.hasNextLine()) {
+//
+//			if (scan.nextLine().contains(textSearch)) {
+////				count++;
+//				System.out.println("+++++++++++>>>>>>>>>>>>>>>>>>>>" + count);
+//
+////				scan.nextLine().replace(textSearch, newEmail);
+//
+////			} else {
+//
+//			}
+//			fileContent = fileContent.concat(scan.nextLine() + "\n");
+//
+//		}
+
+		FileWriter writer = new FileWriter("src/CompleteWorkspace1_New.text");
+		writer.write(fileContent);
+		writer.close();
+		System.out.println("-----------------End-----------------");
+	}
+
+}
